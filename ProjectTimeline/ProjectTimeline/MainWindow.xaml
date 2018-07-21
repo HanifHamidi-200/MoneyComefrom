@@ -1,0 +1,41 @@
+﻿<Window x:Class="ProjectTimeline.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectTimeline"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle Fill="#FF7171CB" HorizontalAlignment="Left" Height="222.077" Margin="408.987,105.468,0,0" Stroke="Black" VerticalAlignment="Top" Width="159.741"/>
+        <Button Content="IN" HorizontalAlignment="Left" Height="31.169" Margin="42.753,276.896,0,0" VerticalAlignment="Top" Width="81.818" Background="#FFB62A2A" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="36.027"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="OUT" HorizontalAlignment="Left" Height="35.065" Margin="144.052,265.208,0,0" VerticalAlignment="Top" Width="77.922" Background="#FF3E9E29" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-51.34"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="EXIT" HorizontalAlignment="Left" Height="75.974" Margin="262.883,251.571,0,0" VerticalAlignment="Top" Width="68.182" Background="#FFC5C539"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="60.389" Margin="428.468,186.182,0,0" VerticalAlignment="Top" Width="50.649" Background="#FFE06BE0"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="60.389" Margin="494.702,186.182,0,0" VerticalAlignment="Top" Width="50.649" Background="#FFE06BE0"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="60.389" Margin="428.468,251.571,0,0" VerticalAlignment="Top" Width="50.649" Background="#FFE06BE0"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="60.389" Margin="494.702,251.571,0,0" VerticalAlignment="Top" Width="50.649" Background="#FFE06BE0" RenderTransformOrigin="0.462,2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="60.389" Margin="428.468,120.793,0,0" VerticalAlignment="Top" Width="50.649" Background="#FFE06BE0"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="60.389" Margin="494.702,120.793,0,0" VerticalAlignment="Top" Width="50.649" Background="#FFE06BE0"/>
+        <TextBlock HorizontalAlignment="Left" Height="27.273" Margin="50.545,84.039,0,0" TextWrapping="Wrap" Text="COMMAND" VerticalAlignment="Top" Width="112.987" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+
+    </Grid>
+</Window>

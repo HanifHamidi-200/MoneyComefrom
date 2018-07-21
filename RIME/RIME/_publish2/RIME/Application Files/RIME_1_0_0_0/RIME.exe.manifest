@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="RIME.exe" version="1.0.0.0" publicKeyToken="2d683e7ddca56ff0" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="RIME" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="RIME.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RIME.exe" size="13792">
+      <assemblyIdentity name="RIME" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8dmxUGv3cL0+nR4hkGuraaB+YFTtpImDhmoxiL0JsGo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="files\F michael.txt" size="119">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rqic/3mBAbkpbK33WmJr0D1OG3v8XXDL1BNdRwhsSTw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="RIME.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="aa0f3d93d70ba52cd1b9172ab36652e2368b047c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>GSw40pr7yyEKdV6Vmkw+l6TLQP16ippExtOCHIPbWp0=</DigestValue></Reference></SignedInfo><SignatureValue>uvRciSy9Aj+5B6XzcnZ01cENeulJs/TN2R3aMmt/+y9Cd4yZmMVrw9AvVF3VmCcxbt2xpamlXYdOJSHdHPfWes5QydMlYCMgQIm/dm0/B8WNGyIxmE/9KoVqhRPxs8MjiwFG6R0dd1Hz1HpoHLHiaUiHlZEuAyMtJHmTzu4WfRU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6tS5Wib329LFID1A2RApWJOpdaoVi4XGMb8u7Mq0uJz0qHbGG8hZjXFc4TldV7NK4W8VwMpSAgKmZ+KKsoZhyiFa1AtPpbJo4x8CIQpF0TbBj9N0z12TJoOsQkSDVSjznZ866NacTcH3H0lhIMl/HWyhzNdkSEgjpVRKvy9enoE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9d5adb831c82d3c6449a8a7afd40cba4973e4c9a955e750a21cbfb9ad2382c19" Description="" Url=""><as:assemblyIdentity name="RIME.exe" version="1.0.0.0" publicKeyToken="2d683e7ddca56ff0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>x2VsEYYNjjUgIRZQFOpTcVOpnejtsiQw//Oaw7rAO9E=</DigestValue></Reference></SignedInfo><SignatureValue>laSIvgDyHsKiGeFikB4kjQfgcPut+K2tZzEkbw4UzRqKTclotqMnKXiYPfHtoc7+nxapohYCEBfj9jqgyDpTLKZKRaXD7SexVD0waNFmDospUnocjgqdcMOvLEbs883n4bbtD4mLxEngCQ8ZlnMVr/ku5MK7oMod5W84O4/Uwt4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6tS5Wib329LFID1A2RApWJOpdaoVi4XGMb8u7Mq0uJz0qHbGG8hZjXFc4TldV7NK4W8VwMpSAgKmZ+KKsoZhyiFa1AtPpbJo4x8CIQpF0TbBj9N0z12TJoOsQkSDVSjznZ866NacTcH3H0lhIMl/HWyhzNdkSEgjpVRKvy9enoE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQJz+C9rMLsrhKIqSSs+aGMTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgwNzIwMDk1MTA1WhcNMTkwNzIwMTU1MTA1WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOrUuVom99vSxSA9QNkQKViTqXWqFYuFxjG/LuzKtLic9Kh2xhvIWY1xXOE5XVezSuFvFcDKUgICpmfiirKGYcohWtQLT6WyaOMfAiEKRdE2wY/TdM9dkyaDrEJEg1Uo852fOujWnE3B9x9JYSDJfx1soczXZEhII6VUSr8vXp6BAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAWAyY/CjF9T8tuhH9ClHkEFDCjDTrkLHUEjaBRZ6CFp1wUxC9B8mAaXA6tTcU1wbo+XNMuIpPp4hVsutwk+Vl8ROniDePQrnUbeeVku3w/NHz+Hh9o7fFIXCnwK4kZBNbP+r7EN/DrPTvb1oi6r7p9wEFVJL9p4NQn3WUldwrqt0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

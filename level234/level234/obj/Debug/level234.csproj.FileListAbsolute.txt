@@ -1,0 +1,10 @@
+c:\users\hanif\source\repos\level234\level234\obj\Debug\level234.csprojAssemblyReference.cache
+c:\users\hanif\source\repos\level234\level234\obj\Debug\level234.Form1.resources
+c:\users\hanif\source\repos\level234\level234\obj\Debug\level234.Properties.Resources.resources
+c:\users\hanif\source\repos\level234\level234\obj\Debug\level234.csproj.GenerateResource.cache
+c:\users\hanif\source\repos\level234\level234\obj\Debug\level234.csproj.CoreCompileInputs.cache
+c:\users\hanif\source\repos\level234\level234\bin\Debug\level234.exe.config
+c:\users\hanif\source\repos\level234\level234\bin\Debug\level234.exe
+c:\users\hanif\source\repos\level234\level234\bin\Debug\level234.pdb
+c:\users\hanif\source\repos\level234\level234\obj\Debug\level234.exe
+c:\users\hanif\source\repos\level234\level234\obj\Debug\level234.pdb

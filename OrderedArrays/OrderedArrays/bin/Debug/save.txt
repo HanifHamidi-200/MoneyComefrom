@@ -1,0 +1,10 @@
+2
+LIST
+NX
+Cars+Machines
+Retail
+4
+NY
+Golf
+Trade
+2
