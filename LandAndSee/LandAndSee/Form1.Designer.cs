@@ -30,10 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnNav4 = new System.Windows.Forms.Button();
+            this.btnNav2 = new System.Windows.Forms.Button();
+            this.btnNav3 = new System.Windows.Forms.Button();
             this.btnNav1 = new System.Windows.Forms.Button();
             this.btnMoveon = new System.Windows.Forms.Button();
             this.btnReroll = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lst2 = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lst1 = new System.Windows.Forms.ListBox();
             this.lblScore = new System.Windows.Forms.Label();
             this.btnQNext = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -101,13 +108,10 @@
             this.pic31 = new System.Windows.Forms.PictureBox();
             this.pic21 = new System.Windows.Forms.PictureBox();
             this.pic11 = new System.Windows.Forms.PictureBox();
-            this.lst1 = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lst2 = new System.Windows.Forms.ListBox();
-            this.btnNav3 = new System.Windows.Forms.Button();
-            this.btnNav2 = new System.Windows.Forms.Button();
-            this.btnNav4 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtInstruction = new System.Windows.Forms.TextBox();
+            this.btnSell = new System.Windows.Forms.Button();
+            this.btnComply = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -180,6 +184,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.groupBox1.Controls.Add(this.btnComply);
+            this.groupBox1.Controls.Add(this.btnSell);
             this.groupBox1.Controls.Add(this.btnNav4);
             this.groupBox1.Controls.Add(this.btnNav2);
             this.groupBox1.Controls.Add(this.btnNav3);
@@ -193,14 +199,45 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "kontrol";
             // 
+            // btnNav4
+            // 
+            this.btnNav4.Location = new System.Drawing.Point(13, 293);
+            this.btnNav4.Name = "btnNav4";
+            this.btnNav4.Size = new System.Drawing.Size(40, 40);
+            this.btnNav4.TabIndex = 6;
+            this.btnNav4.Text = "<-";
+            this.btnNav4.UseVisualStyleBackColor = true;
+            this.btnNav4.Click += new System.EventHandler(this.btnNav4_Click);
+            // 
+            // btnNav2
+            // 
+            this.btnNav2.Location = new System.Drawing.Point(105, 293);
+            this.btnNav2.Name = "btnNav2";
+            this.btnNav2.Size = new System.Drawing.Size(40, 40);
+            this.btnNav2.TabIndex = 5;
+            this.btnNav2.Text = "->";
+            this.btnNav2.UseVisualStyleBackColor = true;
+            this.btnNav2.Click += new System.EventHandler(this.btnNav2_Click);
+            // 
+            // btnNav3
+            // 
+            this.btnNav3.Location = new System.Drawing.Point(59, 293);
+            this.btnNav3.Name = "btnNav3";
+            this.btnNav3.Size = new System.Drawing.Size(40, 40);
+            this.btnNav3.TabIndex = 4;
+            this.btnNav3.Text = "\\/";
+            this.btnNav3.UseVisualStyleBackColor = true;
+            this.btnNav3.Click += new System.EventHandler(this.btnNav3_Click);
+            // 
             // btnNav1
             // 
-            this.btnNav1.Location = new System.Drawing.Point(54, 155);
+            this.btnNav1.Location = new System.Drawing.Point(59, 253);
             this.btnNav1.Name = "btnNav1";
             this.btnNav1.Size = new System.Drawing.Size(40, 40);
             this.btnNav1.TabIndex = 3;
             this.btnNav1.Text = "^";
             this.btnNav1.UseVisualStyleBackColor = true;
+            this.btnNav1.Click += new System.EventHandler(this.btnNav1_Click);
             // 
             // btnMoveon
             // 
@@ -210,6 +247,7 @@
             this.btnMoveon.TabIndex = 2;
             this.btnMoveon.Text = "&Moveon";
             this.btnMoveon.UseVisualStyleBackColor = true;
+            this.btnMoveon.Click += new System.EventHandler(this.btnMoveon_Click);
             // 
             // btnReroll
             // 
@@ -219,10 +257,13 @@
             this.btnReroll.TabIndex = 1;
             this.btnReroll.Text = "&Reroll";
             this.btnReroll.UseVisualStyleBackColor = true;
+            this.btnReroll.Click += new System.EventHandler(this.btnReroll_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.groupBox2.Controls.Add(this.txtInstruction);
+            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.lst2);
             this.groupBox2.Controls.Add(this.label1);
@@ -234,10 +275,54 @@
             this.groupBox2.ForeColor = System.Drawing.Color.Red;
             this.groupBox2.Location = new System.Drawing.Point(12, 35);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(564, 380);
+            this.groupBox2.Size = new System.Drawing.Size(564, 415);
             this.groupBox2.TabIndex = 38;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "skroll";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Yellow;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(24, 223);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 15);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Gotlist:-";
+            // 
+            // lst2
+            // 
+            this.lst2.FormattingEnabled = true;
+            this.lst2.Location = new System.Drawing.Point(24, 244);
+            this.lst2.Name = "lst2";
+            this.lst2.Size = new System.Drawing.Size(126, 95);
+            this.lst2.TabIndex = 31;
+            this.lst2.SelectedIndexChanged += new System.EventHandler(this.lst2_SelectedIndexChanged);
+            this.lst2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lst2_MouseUp);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Yellow;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(24, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 15);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Shoppinglist:-";
+            // 
+            // lst1
+            // 
+            this.lst1.FormattingEnabled = true;
+            this.lst1.Location = new System.Drawing.Point(24, 113);
+            this.lst1.Name = "lst1";
+            this.lst1.Size = new System.Drawing.Size(126, 95);
+            this.lst1.TabIndex = 4;
             // 
             // lblScore
             // 
@@ -260,6 +345,7 @@
             this.btnQNext.TabIndex = 0;
             this.btnQNext.Text = "QNext";
             this.btnQNext.UseVisualStyleBackColor = true;
+            this.btnQNext.Click += new System.EventHandler(this.btnQNext_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -991,74 +1077,45 @@
             this.pic11.TabIndex = 2;
             this.pic11.TabStop = false;
             // 
-            // lst1
+            // label3
             // 
-            this.lst1.FormattingEnabled = true;
-            this.lst1.Location = new System.Drawing.Point(24, 113);
-            this.lst1.Name = "lst1";
-            this.lst1.Size = new System.Drawing.Size(126, 95);
-            this.lst1.TabIndex = 4;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Yellow;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(24, 365);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "Instruction:-";
             // 
-            // label1
+            // txtInstruction
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Yellow;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(24, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 15);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Shoppinglist:-";
+            this.txtInstruction.Location = new System.Drawing.Point(24, 389);
+            this.txtInstruction.Name = "txtInstruction";
+            this.txtInstruction.Size = new System.Drawing.Size(306, 20);
+            this.txtInstruction.TabIndex = 34;
             // 
-            // label2
+            // btnSell
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Yellow;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(24, 223);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 15);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Gotlist:-";
+            this.btnSell.Location = new System.Drawing.Point(20, 127);
+            this.btnSell.Name = "btnSell";
+            this.btnSell.Size = new System.Drawing.Size(107, 40);
+            this.btnSell.TabIndex = 7;
+            this.btnSell.Text = "sell";
+            this.btnSell.UseVisualStyleBackColor = true;
+            this.btnSell.Click += new System.EventHandler(this.btnSell_Click);
             // 
-            // lst2
+            // btnComply
             // 
-            this.lst2.FormattingEnabled = true;
-            this.lst2.Location = new System.Drawing.Point(24, 244);
-            this.lst2.Name = "lst2";
-            this.lst2.Size = new System.Drawing.Size(126, 95);
-            this.lst2.TabIndex = 31;
-            // 
-            // btnNav3
-            // 
-            this.btnNav3.Location = new System.Drawing.Point(54, 195);
-            this.btnNav3.Name = "btnNav3";
-            this.btnNav3.Size = new System.Drawing.Size(40, 40);
-            this.btnNav3.TabIndex = 4;
-            this.btnNav3.Text = "\\/";
-            this.btnNav3.UseVisualStyleBackColor = true;
-            // 
-            // btnNav2
-            // 
-            this.btnNav2.Location = new System.Drawing.Point(100, 195);
-            this.btnNav2.Name = "btnNav2";
-            this.btnNav2.Size = new System.Drawing.Size(40, 40);
-            this.btnNav2.TabIndex = 5;
-            this.btnNav2.Text = "->";
-            this.btnNav2.UseVisualStyleBackColor = true;
-            // 
-            // btnNav4
-            // 
-            this.btnNav4.Location = new System.Drawing.Point(8, 195);
-            this.btnNav4.Name = "btnNav4";
-            this.btnNav4.Size = new System.Drawing.Size(40, 40);
-            this.btnNav4.TabIndex = 6;
-            this.btnNav4.Text = "<-";
-            this.btnNav4.UseVisualStyleBackColor = true;
+            this.btnComply.Location = new System.Drawing.Point(20, 173);
+            this.btnComply.Name = "btnComply";
+            this.btnComply.Size = new System.Drawing.Size(107, 40);
+            this.btnComply.TabIndex = 8;
+            this.btnComply.Text = "comply";
+            this.btnComply.UseVisualStyleBackColor = true;
+            this.btnComply.Click += new System.EventHandler(this.btnComply_Click);
             // 
             // Form1
             // 
@@ -1069,6 +1126,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "Form1";
             this.Text = "LandAndSee";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -1222,6 +1280,10 @@
         private System.Windows.Forms.PictureBox pic31;
         private System.Windows.Forms.PictureBox pic21;
         private System.Windows.Forms.PictureBox pic11;
+        private System.Windows.Forms.TextBox txtInstruction;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnComply;
+        private System.Windows.Forms.Button btnSell;
     }
 }
 
