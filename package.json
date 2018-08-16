@@ -2,7 +2,7 @@
   "name": "moneycomefrom",
   "version": "1.0.0",
   "description": "TestApp1_spinoff",
-  "main": "index.js",
+  "main": "add.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/HanifHamidi-200/MoneyComefrom.git"
   },
-  "author": "Hanif Hamidi",
+  "dependencies":{
+    "express":"*",
+    "body-parser":"*"
+  },
+"author": "Hanif Hamidi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HanifHamidi-200/MoneyComefrom/issues"
